@@ -36,7 +36,11 @@ def levenshtein_distance(A: str, B: str) -> int:
 
 def levenshtein_distance(A: str, B: str) -> int:
     '''
+<<<<<<< HEAD
     dist[i][j] = distance(A[:i], B[:j])
+=======
+    dist[i][j] = distance(A[i:], B[j:])
+>>>>>>> dbb53ed077223680a15ef3a62c18677b5721a7e9
 
     Time Complexity: O(len(a) * len(b))
     Space Complexity: O(len(a) * len(b))
@@ -142,6 +146,7 @@ def levenshtein_distance(A, B):
     return edit_distance(m, n)
 
 if __name__ == '__main__':
+    #print(levenshtein_distance('TG', 'ACGTTGGC'))
     exit(
         generic_test.generic_test_main('levenshtein_distance.py',
                                        'levenshtein_distance.tsv',
